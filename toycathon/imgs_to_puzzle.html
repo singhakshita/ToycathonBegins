@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>PuzzleImg example - Images to Puzzle</title>
+<meta name="description" content="PuzzleImg example - Converting two images in webpage to Puzzle" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="puzzleimg.css" />
+<script src="puzzleimg.js"></script>
+<style>
+body{
+background:#fbfbfe;
+text-align:center;
+}
+h1 {
+margin:5px auto;
+font-size:22px;
+}
+h2 {
+margin:0 auto 4px auto;
+font-size:18px;
+}
+#dv1, #dv2 {
+display:inline-block;
+margin:5px 1px;
+border:1px dashed #333;
+text-align:center;
+padding:3px;
+}
+blockquote {
+text-align:left;
+}
+pre {margin:1px 1px 9px 1px;background:#fefebb;font-size:15px; font-weight:bold;text-align:left;color:blue;padding:3px 4px;}
+</style>
+</head>
+<body>
+<h1>PuzzleImg example - Images to Puzzle</h1>
+
+<div id="dv1">
+<h2>Spring Dream</h2>
+<img src="lomascave7game1.3P.png" width="580" height="435" alt="Spring Dream" class="imgs" />
+</div>
+<div id="dv2">
+<h2>Tree</h2>
+<img src="tree.jpg" width="310" height="465" alt="Tree" class="imgs" />
+</div>
+<script>
+//<![CDATA[
+//function called when the puzzle is completed
+var solved = function(){
+  alert('Congratulations');
+}
+
+//converts into puzzle all the images with class "imgs" in Div elements
+//sets 3 columns and 4 rows, and value 0 for the 4th argument to Not display the button that solves the puzzle (1 to show it)
+//calls the solved() function when the puzzle is completed
+imgToPuzzle('div .imgs', 3, 4, 0, solved);
+// ]]>
+</script>
+
+<blockquote>
+- Images in page converted into simple puzzles with PuzzleImg.<br>
+- Code:
+</blockquote>
+<pre>
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;title&gt;PuzzleImg example - Images to Puzzle&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;puzzleimg.css&quot; /&gt;
+&lt;script src=&quot;puzzleimg.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;
+ &lt;img src=&quot;spring_dream.jpg&quot; width=&quot;580&quot; height=&quot;435&quot; alt=&quot;Spring Dream&quot; class=&quot;imgs&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+ &lt;img src=&quot;tree.jpg&quot; width=&quot;310&quot; height=&quot;465&quot; alt=&quot;Tree&quot; class=&quot;imgs&quot; /&gt;
+&lt;/div&gt;
+&lt;script&gt;
+//&lt;![CDATA[
+//function called when the puzzle is completed
+var solved = function(){
+  alert('Congratulations');
+}
+
+//converts into puzzle all the images with class &quot;imgs&quot; in Div elements
+//sets 3 columns and 4 rows, and value 0 for the 4th argument to Not display the button that solves the puzzle (1 to show it)
+//calls the solved() function when the puzzle is completed
+imgToPuzzle('div .imgs', 3, 4, 0, solved);
+// ]]&gt;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<hr>
+</body>
+</html>

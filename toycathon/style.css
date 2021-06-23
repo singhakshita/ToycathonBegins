@@ -1,0 +1,151 @@
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container1 {
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  width: auto;
+  padding: 2px;
+  margin-top: -50px;
+  
+ font-weight: bold;
+ font-size: 20px;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+ -webkit-user-select: none; 
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.container2 {
+ // position: relative;
+  width: 100%;
+ // max-width: 400px;
+}
+
+.container2 img {
+  width: 100%;
+  height: auto;
+} 
+
+.container2 .btn {
+  position: absolute;
+  top: 60%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: pink;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  z-index:50;
+}
+
+.container2 .btn2 {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: pink;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  z-index:50;
+}
+
+.container2 .btn:hover {
+  background-color: black;
+}
+
+.container2 .btn2:hover {
+  background-color: black;
+}
+
+ .dialog_help{
+ 
+  background-color: black;
+  background-size: 30%;
+  border: 3px solid green;
+  padding: 50px;
+  margin: 20px;
+color:yellow;
+z-index:60;
+}
+
