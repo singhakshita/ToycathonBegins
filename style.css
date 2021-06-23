@@ -71,7 +71,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 200px;
-  margin: auto;
+  margin: auto auto;
   align-content: center;
   top: 40%;
 }
